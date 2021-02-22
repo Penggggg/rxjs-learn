@@ -33,6 +33,6 @@ const {Observable} = require('rxjs')
 //   ).subscribe(console.log)
 
 Observable.zip(
-  Observable.from([1, 2, 3]),
-  Observable.from([4, 5, 6, 7])
+  Observable.from([1]),
+  Observable.interval(1000)
 ).subscribe(console.log)
